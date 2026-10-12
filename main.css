@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #faf7f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 40px;
+}
+
+.navbarlogo {
+  font-size: 24px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+nav   a {
+  margin: 0 12px;
+  color: black;
+  text-decoration: none;
+}
+
+.createbtn {
+  background-color: goldenrod;
+  color: rgb(0, 0, 0);
+  /* background: none; */
+  padding: 10px 18px;
+  border-radius: 25px;
+}
+
+.hero {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.hero h1 p {
+  color: goldenrod;
+}
+
+.heroimage img {
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* stat cards */
+.stat {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.statcard {
+  background-color:white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 25%;
+  border-radius: 10px;
+  border-color: black;
+}
+
+/* exhibitions */
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.exhibitions-grid {
+  display: flex;
+  gap: 20px;
+  padding: 0 40px;
+}
+
+.exhibition-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  width: 30%;
+}
+
+.exhibition-card img {
+  width: 100%;
+  height: 160px;
+}
+
+.status {
+  background-color: lightgreen;
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 15px;
+}
+
+/* table */
+table {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid lightgray;
+  text-align: left;
+}
+
+th {
+  background-color: #f1ebdd;
+}
