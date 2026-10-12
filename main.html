@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class = "navbar">
+
+        <div class = "navbarlogo">
+            PIXEL
+        </div>
+
+        <nav>
+            <a href = "main.html">Dashboard</a>
+            <a href = "artists.html">Artists</a>
+            <a href = "artworks.html">Artworks</a>
+            <a href = "exhibitions.html">Exhibitions</a>
+            <a href = "gallery.html">Gallery</a>
+        </nav>
+
+        <button class = "createbtn">Create Exhibition</button>
+    </header>
+    
+    <main>
+
+        <section class="hero">
+            <div clas="herotext">
+                <span>ART GALLERY EXHIBITION MANAGEMENT</span>
+                <h1 style="font-size: 60px;">Manage Your Gallery
+                    <br>
+                    <p>Curate Your Story</p>
+                </h1>
+                <p>
+                Connect artists,artworks and exhibitions ------ all in one place <br>
+                Create manage and showcase at one place
+                </p>
+
+            </div>
+
+            <div class="heroimage">
+                <img src="images/hero-image.png" alt="Image">
+            </div>
+        </section>
+
+        <section class="stat">
+            <div class ="statcard">
+                <h3>Artists</h3>
+                <h2>24</h2>
+                <p>Total Artists</p>
+            </div>
+            <div class ="statcard">
+                <h3>Artworks</h3>
+                <h2>68</h2>
+                <p>Total Artworks in Collections</p>
+            </div>
+            <div class = "statcard">
+                <h3>Active Exhibitions</h3>
+                <h2>5</h2>
+                <p>Currently Running Exhibitions</p>
+            </div>
+            <div class = "statcard">
+                <h3>Gallery Spaces</h3>
+                <h2>3</h2>
+                <p>Available Gallery Spaces</p>
+            </div>
+        </section>
+
+        <section class ="exhibitions">
+            <div class ="sectionheading">
+                <h2>Current Exhibitions
+                </h2>
+                <a href="#">View All</a>
+            </div>
+            <div class ="exhibitionsgrid">
+                <div class="exhibitionscard">
+                    <img src="" alt="Exhibition 1">
+                    <h3>Reflections & Realities</h3>
+                    <p>By Aarav Sharma</p>
+                    <span>
+                        Aug 15 - Oct 10,2026
+                    </span>
+                    <div class = "status">
+                        Ongoing
+                    </div>
+                </div>
+                <div class ="exhibitions grid">
+                    <div class ="exhibitions.card">
+                        <img src ="" alt="Exhibition 2">
+                        <h3>Beyond the surface</h3>
+                        <p>Bijaya Sarkar</p>
+                        <span>
+                            Sep 1 - Nov 30,2026
+                        </span>
+                        <div class ="status">
+                            Ongoing
+                        </div>
+                    </div>
+                </div>
+                <div class ="exhibitionsgrid">
+                    <div class ="exhibitionscard">
+                        <img src ="images/exhibition3.jpg" alt="Exhibition 3">
+                        <h3>Colors of the Mind</h3>
+                        <p>Chaitali Das</p>
+                        <span>
+                            Nov 5 - Dec 20,2026
+                        </span>
+                        <div class ="status">
+                            Upcoming
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+
+    <table>
+        <thead>
+        <tr>
+            <th>ArtWork</th>
+            <th>Curator</th>
+            <th>Exhibition</th>
+            <th>Gallery Space</th>
+            <th>Assigned on</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Untitled(2024)</td>
+            <td>Aarav Sharma</td>
+            <td>Reflections & Realities</td>
+            <td>Gallery 1</td>
+            <td>Sep 15, 2026</td>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <td>City Dreams</td>
+            <td>Bijaya Sarkar</td>
+            <td>Beyond the Surface</td>
+            <td>Gallery 2</td>
+            <td>Oct 1, 2026</td>
+            <td>Ongoing</td>
+        </tr>
+        <tr>
+            <td>The Waiting Room</td>
+            <td>Chaitali Das</td>
+            <td>Colors of the Mind</td>
+            <td>Gallery 3</td>
+            <td>Nov 5, 2026</td>
+            <td>Upcoming</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
