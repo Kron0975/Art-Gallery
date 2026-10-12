@@ -1,8 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #faf7f2;
-  margin: 0;
-  padding: 20px;
+  margin-left: auto;
+
 }
 
 .navbar {
@@ -114,18 +114,23 @@ nav   a {
 
 /* table */
 table {
-  width: 90%;
-  margin: 30px auto;
+  
+  width: 80%;
+  margin: 0;
   border-collapse: collapse;
   background-color: white;
 }
 
 th, td {
   padding: 12px;
-  border: 1px solid lightgray;
+  border: 0.2px solid black;
   text-align: left;
 }
 
 th {
   background-color: #f1ebdd;
+}
+
+.table{
+  padding: 40px;
 }
