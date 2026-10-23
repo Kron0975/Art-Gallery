@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #faf7f2;
+  margin: 25px;
+  
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 15px 40px;
+}
+
+.navbarlogo {
+  font-size: 24px;
+  font-weight: bold;
+  color: goldenrod;
+}
+
+nav a {
+  margin: 0 12px;
+  color: black;
+  text-decoration: none;
+}
+
+.createbtn {
+  background-color: goldenrod;
+  color: rgb(0, 0, 0);
+  /* background: none; */
+  padding: 10px 18px;
+  border-radius: 25px;
+}
+
+footer {
+  background-color: #f3c4c4;
+  color: #000000;
+  text-align: left;
+  padding: 30px 20px; 
+  margin-top: 100px;   
+}
+
+.title {
+    padding: 20px 40px;
+}
+
+.navigation {
+    padding: 0 25px;
+    
+}
+
+.navigation a {
+    background-color: rgb(236, 156, 203);
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.about { 
+    padding: 0 40px;
+}
+
+.artworks {
+    padding: 12px 40px;
+    display: grid;
+    /* try understanding this line learned something new ~KARTIK */
+    grid-template-columns: repeat(4,1fr);
+    gap: 12px;
+}
+.artwork {
+    padding: 20px;
+    background-color: rgb(201, 155, 118);
+    border-radius: 12px;
+    
+}
+.artworks img {
+    
+    border: 5px solid rgb(99, 44, 0);
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.artwork h3 p {
+    padding: 12px;
+    text-align: justify;
+}
+
+.timings {
+    
+    padding: 0 40px;
+}
+
+footer {
+  margin: 0 40px;
+  background-color: #554e4e;
+  color: #ffffff;
+  text-align: left;
+  padding: 20px 40px; 
+  margin-top: 100px;   
+}
+
