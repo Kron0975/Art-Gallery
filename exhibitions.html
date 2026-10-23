@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exibitions - Art Gallery</title>
+    <link rel="stylesheet" href="exhibitions.css">
 </head>
 <body>
     <header class = "navbar">
@@ -22,40 +23,51 @@
 
         <button class = "createbtn">Create Exhibition</button>
     </header>
-    <h1>Exhibition</h1>
+
+    <div class="heading">
+    <h1>Exhibitions</h1>
 
     <!-- Banner Image -->
     <img src="https://most-iconic-art.com/cdn/shop/files/Triumph-of-the-Name-of-Jesus-_1584_-01_1024x1024.webp" alt="Exhibition Banner" width="200">
+    </div>
 
     <!-- About the Exhibition -->
-    <h2>About the Exhibition</h2>
+    <div class="about">
+    <h2 style="font-size: 30px;">About the Exhibition</h2>
     <p>
         Welcome to Art & Imagination 2026, a unique exhibition showcasing
         creative artworks from talented artists around the world.
         Visitors can explore paintings, sculptures, and digital art pieces.
     </p>
+    </div>
 
     <!-- Theme -->
-    <h2>Theme</h2>
-    <p>
-        In this Exhibition we are gonna recreate the evergreen <i>illusionistic ceiling painting</i> also known as <b>illusionism</b>.<br><br>
-        Illusionism in art history refers to the use of highly precise artistic techniques to create a visual representation that perfectly mimics the three-dimensional world on a flat, two-dimensional surface.
-        <br>
-        <br>
-        <b>Notice</b><br>
-        <em>The artists can also exhibit their other artforms, the theme is not compulsory.</em>
-    </p>
+    <div class="theme">
+        <h2 style="font-size: 30px;">Theme</h2>
+        <p>
+            In this Exhibition we are gonna recreate the evergreen <i>illusionistic ceiling painting</i> also known as <b>illusionism</b>.<br><br>
+            Illusionism in art history refers to the use of highly precise artistic techniques to create a visual representation that perfectly mimics the three-dimensional world on a flat, two-dimensional surface.
+
+            
+        </p>
+        <div class="note" style="border: 2px solid; padding: 12px ;">
+            <strong>Note : </strong>
+            <em>The artists can also exhibit their other artforms, the theme is not compulsory.</em>
+        </div>
+    </div>
 
     <!-- Date and Venue -->
-    <h2>Date & Venue</h2>
-    <p><strong>Date:</strong> 15 November 2026</p>
-    <p><strong>Venue:</strong> City Art Gallery</p>
+    <div class="exhibition-card">
+        <h2>Date & Venue</h2>
+        <p><strong>Date:</strong> 15 November 2026</p>
+        <p><strong>Venue:</strong> City Art Gallery</p>
 
-    <!-- Featured Artists -->
-    <h2>Featured Artists</h2>
-    <ul>
-        <li>Aarav Sharma</li>
-        <li>Kelvin Venoice</li>
-        <li>Chaitali Das</li>
+        <!-- Featured Artists -->
+        <h2>Featured Artists</h2>
+        <ul>
+            <li>Aarav Sharma</li>
+            <li>Kelvin Venoice</li>
+            <li>Chaitali Das</li>
+    </div>
 </body>
 </html>
