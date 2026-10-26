@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel = "stylesheet" href = "artworks.css">
+</head>
+
+<body>
+    <header class = "navbar">
+        <div class = "navbar__logo">
+            ArtVista
+        </div>
+        <nav>
+            <a href = "index.html">Dashboard</a>
+            <a href = "artists.html">Artists</a>
+            <a href = "artworks.html">Artworks</a>
+            <a href = "exhibitions.html">Exhibitions</a>
+            <a href = "gallery.html">Gallery</a>
+        </nav>
+        <button class ="nav-button" onclick="showAddArtworkMessages()">+AddWork</button>
+    </header>
+
+    <main class ="container">
+        <section class = "page-heading">
+            <div>
+                <p class ="eyebrows">ART COLLECTION</p>
+                <h1>Explore ArtWorks</h1>
+                <p class ="substitle">
+                    Discover,organize and manage the art gallery's art collection in one place.
+                </p>
+            </div> 
+
+            <button class = "primary-button" onclick="showAddArtworkMessages()">+AddWork</button> 
+        </section>
+
+        <section class ="stats">
+            <div class ="stat-card">
+                <p>Total Artworks</p>
+                <h2>68</h2>
+                <span>Across the colection</span>
+            </div>
+            <div class ="stat-card">
+                <p>Assigned Artworks</p>
+                <h2>42</h2>
+                <span>Part of exhibitions</span>
+            </div>
+            <div class ="stat-card">
+                <p>Available Artworks</p>
+                <h2>26</h2>
+                <span>Ready for assignment</span>
+            </div>
+        </section>
+        <section class="toolbar">
+
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Search by artwork or artist..."
+                    aria-label="Search artworks"
+                >
+            </div>
+
+            <div class="filter">
+                <select id="artistFilter" aria-label="Filter by artist">
+                    <option value="all">All Artists</option>
+                    <option value="aarav sharma">Aarav Sharma</option>
+                    <option value="meera iyer">Meera Iyer</option>
+                    <option value="rohan mehta">Rohan Mehta</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <select id="statusFilter" aria-label="Filter by status">
+                    <option value="all">All Statuses</option>
+                    <option value="assigned">Assigned</option>
+                    <option value="available">Available</option>
+                </select>
+            </div>
+
+        </section>
+
+
+        <!-- Artwork collection -->
+        <section>
+
+            <div class="section-heading">
+                <h2>All Artworks</h2>
+                <span class="result-count" id="resultCount">
+                    6 artworks
+                </span>
+            </div>
+
+            <div class="artwork-grid" id="artworkGrid">
+
+                <!-- Artwork 1 -->
+                <article class="artwork-card"
+                    data-title="reflections of gold"
+                    data-artist="aarav sharma"
+                    data-status="assigned">
+
+                    <img
+                        class="artwork-image"
+                        src=""
+                        alt="Landscape artwork with warm natural colors"
+                    >
+
+                    <div class="artwork-content">
+                        <div class="artwork-top">
+                            <h3>Reflections of Gold</h3>
+                            <span class="artwork-year">2025</span>
+                        </div>
+
+                        <p class="artist-name">By Aarav Sharma</p>
+
+                        <div class="artwork-details">
+                            <p>Oil on canvas</p>
+                            <span class="status">Assigned</span>
+                        </div>
+
+                        <a href="exhibitions.html" class="view-link">
+                            View exhibition →
+                        </a>
+                    </div>
+                </article>
+                <!-- Artwork 2 -->
+                <article class="artwork-card"
+                    data-title="city dreams"
+                    data-artist="meera iyer"
+                    data-status="assigned">
+
+                    <img
+                        class="artwork-image"
+                        src=""
+                        alt="Colorful abstract painting"
+                    >
+
+                    <div class="artwork-content">
+                        <div class="artwork-top">
+                            <h3>City Dreams</h3>
+                            <span class="artwork-year">2025</span>
+                        </div>
+
+                        <p class="artist-name">By Meera Iyer</p>
+
+                        <div class="artwork-details">
+                            <p>Acrylic on canvas</p>
+                            <span class="status">Assigned</span>
+                        </div>
+
+                        <a href="exhibitions.html" class="view-link">
+                            View exhibition →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Artwork 3 -->
+                <article class="artwork-card"
+                    data-title="the waiting room"
+                    data-artist="rohan mehta"
+                    data-status="assigned">
+
+                    <img
+                        class="artwork-image"
+                        src=""  
+                        alt="Framed painting displayed in an art gallery"
+                    >
+
+                    <div class="artwork-content">
+                        <div class="artwork-top">
+                            <h3>The Waiting Room</h3>
+                            <span class="artwork-year">2024</span>
+                        </div>
+
+                        <p class="artist-name">By Rohan Mehta</p>
+
+                        <div class="artwork-details">
+                            <p>Mixed media</p>
+                            <span class="status">Assigned</span>
+                        </div>
+
+                        <a href="exhibitions.html" class="view-link">
+                            View exhibition →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Artwork 4 -->
+                <article class="artwork-card"
+                    data-title="the human form"
+                    data-artist="meera iyer"
+                    data-status="available">
+
+                    <img
+                        class="artwork-image"
+                        src=""
+                    >
+
+                    <div class="artwork-content">
+                        <div class="artwork-top">
+                            <h3>The Human Form</h3>
+                            <span class="artwork-year">2025</span>
+                        </div>
+
+                        <p class="artist-name">By Meera Iyer</p>
+
+                        <div class="artwork-details">
+                            <p>Contemporary art</p>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <a href="exhibitions.html" class="view-link">
+                            Assign to exhibition →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Artwork 5 -->
+                <article class="artwork-card"
+                    data-title="silent horizons"
+                    data-artist="aarav sharma"
+                    data-status="available">
+
+                    <img
+                        class="artwork-image"
+                        src=""
+                        alt="Peaceful landscape in warm light"
+                    >
+
+                    <div class="artwork-content">
+                        <div class="artwork-top">
+                            <h3>Silent Horizons</h3>
+                            <span class="artwork-year">2024</span>
+                        </div>
+
+                        <p class="artist-name">By Aarav Sharma</p>
+
+                        <div class="artwork-details">
+                            <p>Landscape painting</p>
+                            <span class="status available">Available</span>
+                        </div>
+
+                        <a href="exhibitions.html" class="view-link">
+                            Assign to exhibition →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Artwork 6 -->
+                <article class="artwork-card"
+                    data-title="fragments of life"
+                    data-artist="rohan mehta"
+                    data-status="assigned">
+
+                    <img
+                        class="artwork-image"
+                        src=""
+                        alt="Modern abstract artwork with bold colors"
+                    >
+
+                    <div class="artwork-content">
+                        <div class="artwork-top">
+                            <h3>Fragments of Life</h3>
+                            <span class="artwork-year">2025</span>
+                        </div>
+
+                        <p class="artist-name">By Rohan Mehta</p>
+
+                        <div class="artwork-details">
+                            <p>Abstract painting</p>
+                            <span class="status">Assigned</span>
+                        </div>
+
+                        <a href="exhibitions.html" class="view-link">
+                            View exhibition →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+            <div class="empty-state" id="emptyState">
+                <h3>No artworks found</h3>
+                <p>Try another search term or change your filters.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        © 2026 ArtVista — Art Gallery Exhibition Management
+    </footer>
+
+
+</body>
+</html>
