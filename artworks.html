@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Artworks - Art Gallery</title>
 
-    <link rel = "stylesheet" href = "artworks.css">
+    <link rel="stylesheet" href="artworks.css">
 </head>
 
 <body>
     <header class = "navbar">
-        <div class = "navbar__logo">
-            ArtVista
+        <div class="navbarlogo">
+            PIXEL
         </div>
         <nav>
-            <a href = "index.html">Dashboard</a>
+            <a href = "main.html">Dashboard</a>
             <a href = "artists.html">Artists</a>
             <a href = "artworks.html">Artworks</a>
             <a href = "exhibitions.html">Exhibitions</a>
             <a href = "gallery.html">Gallery</a>
         </nav>
-        <button class ="nav-button" onclick="showAddArtworkMessages()">+AddWork</button>
+        <button class = "createbtn">Create Exhibition</button>
     </header>
 
     <main class ="container">
@@ -33,7 +33,7 @@
                 </p>
             </div> 
 
-            <button class = "primary-button" onclick="showAddArtworkMessages()">+AddWork</button> 
+            <button class="button">+ Art Work</button> 
         </section>
 
         <section class ="stats">
@@ -60,12 +60,11 @@
                     type="search"
                     id="searchInput"
                     placeholder="Search by artwork or artist..."
-                    aria-label="Search artworks"
                 >
             </div>
 
             <div class="filter">
-                <select id="artistFilter" aria-label="Filter by artist">
+                <select id="artistFilter" >
                     <option value="all">All Artists</option>
                     <option value="aarav sharma">Aarav Sharma</option>
                     <option value="meera iyer">Meera Iyer</option>
@@ -74,7 +73,7 @@
             </div>
 
             <div class="filter">
-                <select id="statusFilter" aria-label="Filter by status">
+                <select id="statusFilter" >
                     <option value="all">All Statuses</option>
                     <option value="assigned">Assigned</option>
                     <option value="available">Available</option>
@@ -96,16 +95,13 @@
 
             <div class="artwork-grid" id="artworkGrid">
 
-                <!-- Artwork 1 -->
-                <article class="artwork-card"
-                    data-title="reflections of gold"
-                    data-artist="aarav sharma"
-                    data-status="assigned">
+                <!-- artwork 1 -->
+                <article class="artwork-card">
 
                     <img
                         class="artwork-image"
-                        src=""
-                        alt="Landscape artwork with warm natural colors"
+                        src="images/artwork1.jpg"
+                        alt="Landscape painting with tall trees"
                     >
 
                     <div class="artwork-content">
@@ -127,15 +123,12 @@
                     </div>
                 </article>
                 <!-- Artwork 2 -->
-                <article class="artwork-card"
-                    data-title="city dreams"
-                    data-artist="meera iyer"
-                    data-status="assigned">
+                <article class="artwork-card">
 
                     <img
                         class="artwork-image"
-                        src=""
-                        alt="Colorful abstract painting"
+                        src="images/artwork2.jpg"
+                        alt="Painting of colorful flowers"
                     >
 
                     <div class="artwork-content">
@@ -159,14 +152,11 @@
 
 
                 <!-- Artwork 3 -->
-                <article class="artwork-card"
-                    data-title="the waiting room"
-                    data-artist="rohan mehta"
-                    data-status="assigned">
+                <article class="artwork-card">
 
                     <img
                         class="artwork-image"
-                        src=""  
+                        src="images/artwork3.jpg"
                         alt="Framed painting displayed in an art gallery"
                     >
 
@@ -191,14 +181,12 @@
 
 
                 <!-- Artwork 4 -->
-                <article class="artwork-card"
-                    data-title="the human form"
-                    data-artist="meera iyer"
-                    data-status="available">
+                <article class="artwork-card">
 
                     <img
                         class="artwork-image"
-                        src=""
+                        src="images/artwork4.jpg"
+                        alt="Painting of a girl sitting in grass"
                     >
 
                     <div class="artwork-content">
@@ -222,15 +210,12 @@
 
 
                 <!-- Artwork 5 -->
-                <article class="artwork-card"
-                    data-title="silent horizons"
-                    data-artist="aarav sharma"
-                    data-status="available">
+                <article class="artwork-card">
 
                     <img
                         class="artwork-image"
-                        src=""
-                        alt="Peaceful landscape in warm light"
+                        src="images/artwork5.jpg"
+                        alt="Peaceful meadow with a stream"
                     >
 
                     <div class="artwork-content">
@@ -254,15 +239,12 @@
 
 
                 <!-- Artwork 6 -->
-                <article class="artwork-card"
-                    data-title="fragments of life"
-                    data-artist="rohan mehta"
-                    data-status="assigned">
+                <article class="artwork-card">
 
                     <img
                         class="artwork-image"
-                        src=""
-                        alt="Modern abstract artwork with bold colors"
+                        src="images/artwork6.jpg"
+                        alt="Painting of a rocky cliff"
                     >
 
                     <div class="artwork-content">
@@ -286,18 +268,13 @@
 
             </div>
 
-            <div class="empty-state" id="emptyState">
-                <h3>No artworks found</h3>
-                <p>Try another search term or change your filters.</p>
-            </div>
-
         </section>
 
     </main>
 
 
     <footer>
-        © 2026 ArtVista — Art Gallery Exhibition Management
+        &copy; 2026 Art Gallery. All Rights Reserved.
     </footer>
 
 
